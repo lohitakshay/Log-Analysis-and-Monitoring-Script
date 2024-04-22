@@ -31,5 +31,5 @@ This Python script provides real-time analysis of log files, generating summary 
 - Errors and exceptions are logged and displayed to the user.
 
 ## Note
-The script does not print the existing log data in the log file
+The script does not print the existing log data present in the log file
 
