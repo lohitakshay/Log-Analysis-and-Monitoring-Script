@@ -18,9 +18,11 @@ Modify the log_path variable in the script to point to your log file.
 Run the script using python log_analysis.py.
 
 ## Usage
-Run the script, which will continuously monitor the specified log file.
-Summary reports will be generated at regular intervals, providing insights into the log file activity.
-Use the keyword search feature to find specific information within the log file.
+1. Run the `logging_example.py` script to generate example log messages. This script will create a log file named `example.log`.
+2. Use the `example.log` file as a test case for your main log analysis and monitoring script (`log_analysis.py`).
+3. Modify the `log_path` variable in the `log_analysis.py` script to point to the `example.log` file.
+4. Run the `log_analysis.py` script to analyze and monitor the `example.log` file in real-time.
+
 
 ## Features
 Real-time log analysis and monitoring.
