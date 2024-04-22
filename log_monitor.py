@@ -6,7 +6,7 @@ from datetime import datetime
 from tabulate import tabulate
 
 # Path to the log file
-log_path = 'path_to_your_logfile'
+log_path = 'C:\\course\\marketfeed\\example.log'
 
 # Store the last position in the log file that was read
 last_pos = 0
@@ -43,6 +43,7 @@ try:
 
             # Perform basic log analysis on new entries
             for line in new_lines:
+                timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")  
                 if 'error' in line.lower():
                     keyword_count['error'] += 1
                     new_entries['error'] += 1
@@ -56,8 +57,8 @@ try:
                     log_level_count['DEBUG'] += 1
                     new_entries['DEBUG'] += 1
 
-            # Calculate the total count of log entries
-            total_entries += len(new_lines)
+                # Calculate the total count of log entries
+                total_entries += 1  # Increment by 1 for each new entry
 
         # Get the current date and time for the summary report
         report_time = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
@@ -83,8 +84,7 @@ try:
                 sorted_new_lines = sorted(new_lines, key=lambda x: ('warning' in x.lower(), 'error' in x.lower(), 'debug' in x.lower(), 'info' in x.lower()), reverse=True)
                 new_lines_table = []
                 for entry in sorted_new_lines:
-                    timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-                    new_lines_table.append([timestamp, entry.strip()])
+                    new_lines_table.append([timestamp, entry.strip()]) 
                 print(tabulate(new_lines_table, headers=['Date and Time', 'Log Entry'], tablefmt='grid'))
             else:
                 print("\nNo new entries.")
