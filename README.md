@@ -9,13 +9,13 @@ This Python script provides real-time analysis of log files, generating summary 
 3. Tabulate library 
 
 ## Installation
-Clone the repository or download the log_analysis.py file.
-Ensure Python is updated.
-Install the Tabulate library using pip install tabulate.
+- Clone the repository or download the log_analysis.py file.
+- Ensure Python is updated.
+- Install the Tabulate library using pip install tabulate.
 
 ## Execution
-Modify the log_path variable in the script to point to your log file.
-Run the script using python log_analysis.py.
+- Modify the log_path variable in the script to point to your log file.
+- Run the script using python log_analysis.py.
 
 ## Usage
 1. Run the `logging_example.py` script to generate example log messages. This script will create a log file named `example.log`.
@@ -25,10 +25,10 @@ Run the script using python log_analysis.py.
 
 
 ## Features
-Real-time log analysis and monitoring.
-Summary reports include counts of specific keywords or patterns, such as error messages.
-Keyword search functionality allows users to search for specific terms within the log file.
-Errors and exceptions are logged and displayed to the user.
+- Real-time log analysis and monitoring.
+- Summary reports include counts of specific keywords or patterns, such as error messages.
+- Keyword search functionality allows users to search for specific terms within the log file.
+- Errors and exceptions are logged and displayed to the user.
 
 ## Note
 The script does not print the existing log data in the log file
