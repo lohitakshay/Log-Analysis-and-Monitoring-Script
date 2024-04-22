@@ -29,3 +29,7 @@ Real-time log analysis and monitoring.
 Summary reports include counts of specific keywords or patterns, such as error messages.
 Keyword search functionality allows users to search for specific terms within the log file.
 Errors and exceptions are logged and displayed to the user.
+
+## Note
+The script does not print the existing log data in the log file
+
