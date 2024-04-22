@@ -6,7 +6,7 @@ from datetime import datetime
 from tabulate import tabulate
 
 # Path to the log file
-log_path = 'C:\\course\\marketfeed\\trial.log'
+log_path = 'path_to_your_logfile'
 
 # Store the last position in the log file that was read
 last_pos = 0
