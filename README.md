@@ -4,9 +4,9 @@
 This Python script provides real-time analysis of log files, generating summary reports at regular intervals and displaying new entries. It also includes a keyword search feature.
 
 ## Prerequisites
-Basic knowledge of Python and log files
-Python 3.x
-Tabulate library 
+1. Basic knowledge of Python and log files
+2. Python 3.x
+3. Tabulate library 
 
 ## Installation
 Clone the repository or download the log_analysis.py file.
